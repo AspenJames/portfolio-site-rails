@@ -18,16 +18,16 @@ and tinkering with various computer hardware and operating systems.
 <div class='container' markdown='1'>
 
 <div class='section section-1 bottom-border' markdown='1'>
-### Espresso.Log
+### Portfolio Site
 
-[GitHub][gh-el] \| [Demo][demo-el]
+[GitHub][gh-pf] \| [Deployed website][site]
 
-*Web app for coffee shops to organize and track their espresso data*
+*Personal portfolio website*
 
-* Utilizes **React/Redux** front-end framework
-* Client-side routing handled by **React Router**
-* **PostgreSQL** database with a **Rails API** backend
-* Integrates **Canvas.js** for data visualization
+* Built with **React.js**
+* Deployed to **Digital Ocean** via **Apache2**
+* **API** and static site [here][gh-st]
+* Static site uses **Kramdown** to parse Markdown to HTML
 </div>
 
 <div class='section section-2 bottom-border' markdown='1'>
@@ -45,29 +45,29 @@ and tinkering with various computer hardware and operating systems.
 </div>
 
 <div class='section section-3' markdown='1'>
-### Portfolio Site
+### Espresso.Log
 
-[GitHub][gh-pf] \| [Deployed website][site]
+[GitHub][gh-el] \| [Demo][demo-el]
 
-*Personal portfolio website*
+*Web app for coffee shops to organize and track their espresso data*
 
-* Built with **React.js**
-* Deployed to **Digital Ocean** via **Apache2**
-* Calls to own API, listed below
+* Utilizes **React/Redux** front-end framework
+* Client-side routing handled by **React Router**
+* **PostgreSQL** database with a **Rails API** backend
+* Integrates **Canvas.js** for data visualization
 </div>
 
 <div class='section section-4' markdown='1'>
-### Portfolio Site - Static & API
+### Data Structure Implementations
 
-[GitHub][gh-st] \| [Static Blog][site-blog]
+[GitHub][gh-ds]
 
-*Static website turning markdown files into HTML*
+*Implementations of various data structures*
 
-* Written with **Rails**
-* Uses **Kramdown** to convert Markdown to HTML
-* Also serving _this resume_ from Markdown
-* Serves as a **JSON API** for the "Projects" section of my portfolio website
-* Hosted on **Linode** via **Apache2**
+* Examples currently in **JavaScript** and **Ruby**
+* JavaScript tests using **Mocha.js** and **Expect.js**
+* Ruby tests using **RSpec**
+* Follows **TDD** (Test Driven Development) principles
 </div>
 </div>
 
@@ -138,4 +138,5 @@ and tinkering with various computer hardware and operating systems.
 [gh-pf]: https://github.com/aspenjames/portfolio-site
 
 [gh-st]: https://github.com/aspenjames/portfolio-site-rails
-[site-blog]: https://aspenjames.dev/blog
+
+[gh-ds]: https://github.com/data-structure-practice
