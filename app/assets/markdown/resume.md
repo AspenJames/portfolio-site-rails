@@ -15,10 +15,10 @@ and tinkering with various computer hardware and operating systems.
 ---------
 
 ## TECHNICAL PROJECTS
-<div id='project-container' markdown='1'>
+<div class='container' markdown='1'>
 
-<div class='section' id='section-1' markdown='1'>
-#### Espresso.Log
+<div class='section section-1 bottom-border' markdown='1'>
+### Espresso.Log
 
 [GitHub][gh-el] \| [Demo][demo-el]
 
@@ -30,8 +30,8 @@ and tinkering with various computer hardware and operating systems.
 * Integrates **Canvas.js** for data visualization
 </div>
 
-<div class='section' id='section-2' markdown='1'>
-#### Tknbn
+<div class='section section-2 bottom-border' markdown='1'>
+### Tknbn
 
 [GitHub][gh-tk]
 
@@ -44,8 +44,8 @@ and tinkering with various computer hardware and operating systems.
 * [Blog series][blog-tk] written on development process
 </div>
 
-<div class='section' id='section-3' markdown='1'>
-#### Portfolio Site
+<div class='section section-3' markdown='1'>
+### Portfolio Site
 
 [GitHub][gh-pf] \| [Deployed website][site]
 
@@ -56,8 +56,8 @@ and tinkering with various computer hardware and operating systems.
 * Calls to own API, listed below
 </div>
 
-<div class='section' id='section-4' markdown='1'>
-#### Portfolio Site - Static & API
+<div class='section section-4' markdown='1'>
+### Portfolio Site - Static & API
 
 [GitHub][gh-st] \| [Static Blog][site-blog]
 
@@ -78,6 +78,50 @@ and tinkering with various computer hardware and operating systems.
 **Proficient:** Ruby on Rails, JavaScript, React, Redux, SQLite, PostgreSQL
 
 **Self-directed learning:** Java, Apache, Rust, Linux
+
+---------
+
+## EMPLOYMENT HISTORY
+<div class='container' markdown='1'>
+<div class='section section-1' markdown='1'>
+### Flatiron School
+
+*Seattle, WA*
+
+**Software Engineering Coach**, Nov 2018 - Present
+
+* Front line of support for students
+* Delivered lectures and led reviews on key concepts
+* Assisted students in developing best practices for programming and debugging skills
+</div>
+
+<div class='section section-2' markdown='1'>
+### VGCC
+
+*Seattle, WA*
+
+**Consultant and Trainer**, Nov 2017 - Nov 2018
+
+* Responsible for developing and implementing individualized training solutions
+* Designed programs specific to each client to fit adaptive needs
+* Empowered individuals to expand and grow their skill sets
+</div>
+
+<div class='section section-5' markdown='1'>
+### Broadcast Coffee Roasters
+*Seattle, WA* \| 
+**Lead Trainer & Wholesale Support**, Oct 2016 - Nov 2017
+
+### Honor Coffee Co
+*Seattle, WA* \| 
+**Educator & Preventative Maintenance Technician**, Feb 2016 - Sept 2016
+
+### University Book Store
+*Seattle, WA* \| 
+**Operations, Cafe Manager**, Sept 2014 - Jan 2016
+</div>
+
+</div>
 
 [email]: mailto:aspenjames@tqca.org
 [github]: https://github.com/aspenjames
