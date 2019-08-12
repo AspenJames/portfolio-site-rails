@@ -1,4 +1,4 @@
-* {
+body {
   font-family: 'Roboto', 'Fira Sans', sans-serif;
   background-color: #222;
   color: aliceblue;
@@ -37,10 +37,30 @@ h3 {
   text-decoration: underline double;
 }
 
+.back {
+  position: relative;
+  text-align: center;
+  font-size: 1.25em;
+  padding-left: 10px;
+  top: 10px;
+}
+
 @media only screen and (min-width: 901px) {
+  body {
+    width: 85%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   h1 { font-size: 3em; }
 
   h2 { text-align: center; }
+
+  body > p:nth-of-type(2) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
   .container {
     display: grid;
