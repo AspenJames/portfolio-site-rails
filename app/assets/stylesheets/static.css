@@ -9,7 +9,7 @@ body > p:first-of-type {
 }
 
 strong {
-  color: peachpuff;
+  color: cornflowerblue;
 }
 
 a {
@@ -17,16 +17,10 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: lime;
-}
-
 h1 {
   text-align: center;
   margin-bottom: -10px;
 }
-
-h2 { color: hotpink; }
 
 hr {
   color: #666;
