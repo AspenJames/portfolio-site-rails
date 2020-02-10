@@ -13,6 +13,48 @@
   </head>
 
   <body>
-    <%= yield %>
+		<div id='navbar'>
+			<a href='/'
+				 class=<%= 'active' if params[:action] == 'about' %>>
+				<img src='https://14079d9dd99737967afe.s3-us-west-2.amazonaws.com/headshot.jpg' alt='profile'>
+			</a>
+			<a href='mailto:aspenjames@tqca.org'>Email</a>
+			<a href='https://dev.to/aspenjames' target='_blank' rel='noopener noreferrer'>Blog</a>
+			<a href='/resume'
+				 class=<%= 'active' if params[:action] == 'resume' %>>Resume</a>
+		</div>
+		<a href='javascript:void(0);' id='hamburger-icon' onclick='toggleMenu()'>
+			<i id='icon' class='fa fa-bars'></i>
+		</a>
+		<div class='content'>
+			<%= yield %>
+		</div>
   </body>
+
+	<script type='text/javascript'>
+		const nav = document.querySelector('#navbar')
+		const i = document.querySelector('#icon')
+		const content = document.querySelector('div.content')
+
+		function toggleMenu() {
+			if (nav.style.visibility === 'visible') {
+				nav.style.visibility = 'hidden';
+				nav.style.height = '25px';
+				nav.style.borderBottom = '';
+				content.style.opacity = '1';
+				setClass(i, 'fa fa-bars');
+			} else {
+				nav.style.visibility = 'visible';
+				nav.style.height = 'auto';
+				nav.style.borderBottom = '1px outset';
+				content.style.opacity = '0.25';
+				setClass(i, 'fa fa-times');
+			}
+		}
+
+		function setClass(elem, klassList) {
+			elem.classList = [];
+			klassList.split(' ').forEach(c => elem.classList.add(c));
+		}
+	</script>
 </html>

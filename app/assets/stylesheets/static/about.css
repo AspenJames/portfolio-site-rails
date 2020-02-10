@@ -1,0 +1,65 @@
+/* Shared styles */
+
+.content {
+	text-align: center;
+	width: 100%;
+	color: aliceblue;
+}
+
+.content * {
+	margin-bottom: 0.5em;
+}
+
+
+/* Mobile styles */
+@media only screen and (max-width: 760px) {
+	#about-container {
+		width: 80%;
+		margin: auto;
+	}
+
+	h1 {
+		font-size: 2.5em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+		color: aqua;
+	}
+
+	p {
+		font-size: 1em;
+		line-height: 1.3;
+	}
+
+}
+
+/* In-Betweeners */
+@media only screen and (min-width: 761px) and (max-width: 900px) {
+	#about-container {
+		width: 75%;
+		margin: auto;
+	}
+}
+
+/* Web styles */
+@media only screen and (min-width: 901px) {
+	#about-container {
+		width: 50%;
+		margin: auto;
+	}
+
+	h1 {
+		font-size: 4em;
+	}
+
+	h2 {
+		font-size: 2em;
+	}
+
+	p {
+		font-size: 1.2em;
+		line-height: 1.5;
+	}
+
+}

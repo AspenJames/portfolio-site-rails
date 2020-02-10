@@ -14,6 +14,7 @@
  *= require_self
  */
 
+/* Global styles */
 @font-face {
 	font-family: 'JetBrainsMono';
 	src: url('/assets/JetBrainsMono-Regular.ttf') format('truetype');
@@ -42,5 +43,65 @@
 							 'Helvetica Neue', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-mox-osx-font-smoothing: grayscale;
+	background-color: #222;
 }
 
+/* Web styles -- Navbar */
+#navbar {
+	position: relative;
+	margin: 20px 10px 20px;
+	text-align: center;
+}
+
+#navbar img {
+	width: 100px;
+	height: auto;
+	border-radius: 100px;
+}
+
+#navbar a {
+	display: inline-block;
+	vertical-align: middle;
+	color: aqua;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 2em;
+}
+
+#icon {
+	position: absolute;
+	margin: 10px 20px;
+	top: 0;
+	right: 0;
+	display: none;
+	color: aliceblue;
+}
+
+#navbar a.active {
+	color: aliceblue;
+}
+
+/* Mobile styles -- Navbar */
+@media only screen and (max-width: 760px) {
+	#navbar {
+		visibility: hidden;
+		height: 25px;
+		margin-bottom: 10px;
+	}
+
+	#icon {
+		display: block;
+	}
+
+	#navbar a {
+		display: block;
+	}
+
+	#navbar img {
+		display: none;
+	}
+
+	#navbar > a:first-child::before{
+		content: "About"
+	}
+}
