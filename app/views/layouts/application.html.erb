@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
   <head>
     <title>AJ.dev</title>
     <%= csrf_meta_tags %>
@@ -14,22 +14,25 @@
   </head>
 
   <body>
-		<div id='navbar'>
-			<a href='/'
-				 class=<%= 'active' if params[:action] == 'about' %>>
-				<img src='https://14079d9dd99737967afe.s3-us-west-2.amazonaws.com/headshot.jpg' alt='profile'>
-			</a>
-			<a href='mailto:aspenjames@tqca.org'>Email</a>
-			<a href='https://dev.to/aspenjames' target='_blank' rel='noopener noreferrer'>Blog</a>
-			<a href='/resume'
-				 class=<%= 'active' if params[:action] == 'resume' %>>Resume</a>
-		</div>
-		<a href='javascript:void(0);' id='hamburger-icon' onclick='toggleMenu()'>
-			<i id='icon' class='fa fa-bars'></i>
-		</a>
-		<div class='content'>
+    <nav>
+      <div id='navbar'>
+        <img src='https://14079d9dd99737967afe.s3-us-west-2.amazonaws.com/headshot.jpg' alt='profile'>
+        <a href='/'
+           class=<%= 'active' if params[:action] == 'about' %>>
+          About
+        </a>
+        <a href='mailto:aspenjames@tqca.org'>Email</a>
+        <a href='https://dev.to/aspenjames' target='_blank' rel='noopener noreferrer'>Blog</a>
+        <a href='/resume'
+           class=<%= 'active' if params[:action] == 'resume' %>>Resume</a>
+      </div>
+      <a href='javascript:void(0);' id='hamburger-icon' onclick='toggleMenu()' aria-label='Hamburger Menu'>
+        <i id='icon' class='fa fa-bars'></i>
+      </a>
+    </nav>
+		<main class='content'>
 			<%= yield %>
-		</div>
+		</main>
   </body>
 
 	<script type='text/javascript'>

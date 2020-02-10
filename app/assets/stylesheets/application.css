@@ -36,6 +36,7 @@
 	width: 100px;
 	height: auto;
 	border-radius: 100px;
+	vertical-align: middle;
 }
 
 #navbar a {
@@ -78,9 +79,5 @@
 
 	#navbar img {
 		display: none;
-	}
-
-	#navbar > a:first-child::before{
-		content: "About"
 	}
 }
