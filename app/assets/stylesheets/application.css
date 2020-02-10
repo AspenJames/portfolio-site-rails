@@ -62,7 +62,7 @@
 }
 
 /* Mobile styles -- Navbar */
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 900px) {
 	#navbar {
 		visibility: hidden;
 		height: 25px;

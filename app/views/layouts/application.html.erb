@@ -2,6 +2,7 @@
 <html lang='en'>
   <head>
     <title>AJ.dev</title>
+    <meta name='viewport' width='device-width' initial-scale=1>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= favicon_link_tag %>
@@ -38,7 +39,7 @@
 	<script type='text/javascript'>
 		const nav = document.querySelector('#navbar')
 		const i = document.querySelector('#icon')
-		const content = document.querySelector('div.content')
+		const content = document.querySelector('main.content')
 
 		function toggleMenu() {
 			if (nav.style.visibility === 'visible') {
