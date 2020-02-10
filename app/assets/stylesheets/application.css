@@ -15,27 +15,6 @@
  */
 
 /* Global styles */
-@font-face {
-	font-family: 'JetBrainsMono';
-	src: url('/assets/JetBrainsMono-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'JetBrainsMono-Italic';
-	src: url('/assets/JetBrainsMono-Italic.ttf') format('truetype');
-	font-weight: normal;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: 'JetBrainsMono-Bold';
-	src: url('/assets/JetBrainsMono-Bold.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
-}
-
 * {
 	margin: 0;
 	font-family: 'JetBrainsMono', 'Roboto', 'Oxygen',
