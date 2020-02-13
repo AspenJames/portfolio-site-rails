@@ -12,6 +12,7 @@
  *
  *= require_self
  *= require 'fonts'
+ *= require codemirror/lib/codemirror
  */
 
 /* Global styles */
