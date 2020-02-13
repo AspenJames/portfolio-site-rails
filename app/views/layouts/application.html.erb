@@ -27,7 +27,10 @@
            class=<%= 'active' if params[:action] == 'about' %>>
           About
         </a>
-        <a href='mailto:aspenjames@tqca.org'>Email</a>
+        <a href='/projects'
+					 class=<%= 'active' if params[:controller] == 'projects' %>>
+					Projects
+				</a>
         <a href='https://dev.to/aspenjames' target='_blank' rel='noopener noreferrer'>Blog</a>
         <a href='/resume'
            class=<%= 'active' if params[:action] == 'resume' %>>Resume</a>

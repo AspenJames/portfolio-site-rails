@@ -10,12 +10,28 @@
 	margin-bottom: 0.5em;
 }
 
+#about-container {
+	margin: 0 auto 20px;
+}
+
+a {
+	color: aqua;
+	text-decoration: none;
+}
+
+span#contact {
+	font-size: 1.35em;
+}
+
+h2:nth-of-type(2) {
+	color: #FFA4FF;
+}
+
 
 /* Mobile styles */
 @media only screen and (max-width: 900px) {
 	#about-container {
 		width: 80%;
-		margin: auto;
 	}
 
 	h1 {
@@ -24,6 +40,9 @@
 
 	h2 {
 		font-size: 1.5em;
+	}
+
+	h2:first-of-type {
 		color: aqua;
 	}
 
@@ -38,7 +57,6 @@
 @media only screen and (min-width: 901px) {
 	#about-container {
 		width: 50%;
-		margin: auto;
 	}
 
 	h1 {
