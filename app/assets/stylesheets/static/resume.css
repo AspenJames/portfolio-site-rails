@@ -1,3 +1,13 @@
+.content {
+	text-align: center;
+	width: 100%;
+	color: aliceblue;
+}
+
+.content * {
+	margin-bottom: 0.5em
+}
+
 body {
   background-color: #222;
   color: aliceblue;
@@ -18,7 +28,12 @@ a {
 
 h1 {
   text-align: center;
-  margin-bottom: -10px;
+	margin-bottom: -10px;
+	font-size: 4em;
+}
+
+h2 {
+	font-size: 2em;
 }
 
 hr {
