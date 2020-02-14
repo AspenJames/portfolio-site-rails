@@ -5,6 +5,7 @@
 		"git_url": "https://github.com/aspenjames/portfolio-site-rails",
 		"description": "Personal website outlining abilities and demonstrating code examples. This snippet shows a controller action that will conditionally take an action based on the filetype requested. I used this to serve an HTML resume converted from a Markdown file when requesting '/resume', and to serve a PDF download when requesting '/resume.pdf'.",
 		"snippet_path": ["app", "assets", "code", "portfolio.rb"],
+		"snippet_url": "https://github.com/AspenJames/portfolio-site-rails/blob/5d76807e37370a91f1209277d123de41780bc36e/app/controllers/static_controller.rb#L6",
 		"lang": "ruby"
 	},
 	{
@@ -13,6 +14,7 @@
 		"git_url": "https://github.com/aspenjames/espresso-log-simplified",
 		"description": "A tool for coffee shops to record and track their espresso data. This is not a real snippet from that codebase, but demonstrates how to handle quotations in the snippet body.",
 		"snippet_path": ["app", "assets", "code", "espresso.js"],
+		"snippet_url": "https://github.com/AspenJames/espresso-log-react-simplified/blob/master/client/src/components/EspressoChart.js",
 		"lang": "javascript"
 	}
 ]

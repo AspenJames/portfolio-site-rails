@@ -44,4 +44,17 @@ pre * {
   background-color: #eee;
 }
 
+.error {
+  color: red;
+  font-size: 1.25em;
+  text-align: center !important;
+  background-color: #eee;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.error a {
+  background-color: inherit;
+  font-size: inherit;
+  color: darkblue;
 }

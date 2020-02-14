@@ -2,7 +2,7 @@ function main() {
   let retryCount = 0;
   const codemirrorDiv = document.querySelector('#codemirror');
 
-  function load() {
+  async function load() {
 	require(['../assets/codemirror/lib/codemirror', `../assets/codemirror/mode/${codemirrorLang}/${codemirrorLang}`], function(CodeMirror, _) {
 	  CodeMirror(codemirrorDiv, {
 		value: codemirrorSnippet.replace(/&quot;/g, '\"'),
@@ -12,12 +12,27 @@ function main() {
   }
 
   function checkLoaded() {
-	if (codemirrorDiv.innerHTML.length === 0) {
+	const codemirrorPresent = document.querySelector('.CodeMirror');
+	if (!codemirrorPresent) {
+	  // codemirrorDiv is empty, loading has not happened
 	  if (retryCount > 3) {
-		//TODO: take action when can't load
+		// Retry count exceeded
+		codemirrorDiv.innerHTML = "";
+		codemirrorDiv.classList.add('error');
+		codemirrorDiv.textContent = "There was an error loading the JavaScript library to display this code snippet. Refresh the page, and if this problem persists, ";
+		const link = document.createElement('a');
+		link.textContent = "view on GitHub";
+		link.href = codemirrorSnippetUrl;
+		codemirrorDiv.append(link);
 	  } else {
+		// Retry load - inc. count; load; checkLoaded;
 		retryCount++;
-		load();
+		try {
+		  load();
+		  window.addEventListener('load', checkLoaded);
+		} catch(e) {
+		  console.error("error caught during load()", e);
+		}
 	  }
 	}
   }
