@@ -58,17 +58,25 @@ requirements:
 * [Node (LTS recommended)][node]
 
 Once we have those, we can clone the repository:
-    >$ git clone https://github.com/aspenjames/portfolio-site-rails
+```console
+$ git clone https://github.com/aspenjames/portfolio-site-rails
+```
 
 Next, `cd` into the directory:
-    >$ cd portfolio-site-rails
+```console
+$ cd portfolio-site-rails
+```
 
 We'll then install dependencies:
-    >$ bundle install
-    >$ npm install
+```console
+$ bundle install
+$ npm install
+```
 
 We can then start the development server:
-    >$ bundle exec rails server
+```console
+$ bundle exec rails server
+```
 
 You should now be able to navigate to `http://localhost:3000` in your browser
 and see the "About" page.
