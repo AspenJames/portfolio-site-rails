@@ -1,0 +1,40 @@
+.content {
+  text-align: center;
+}
+
+h1 {
+  color: aliceblue;
+  margin-bottom: 10px;
+  size: 3em;
+}
+
+p {
+  color: aliceblue;
+  font-size: 1.2em;
+  width: 80%;
+  margin: 10px auto;
+}
+
+.content a {
+  color: aqua;
+  text-decoration: none;
+  font-size: 1.25em;
+}
+
+div.links {
+  margin-bottom: 10px;
+  color: aliceblue;
+  font-size: 1.25em;
+}
+
+#codemirror {
+  width: 80%;
+  margin: 25px auto 25px;
+  text-align: left;
+  border-radius: 20px;
+}
+
+#codemirror * {
+  background-color: #ddd;
+  border-radius: 20px;
+}

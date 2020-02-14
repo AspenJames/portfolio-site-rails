@@ -9,7 +9,7 @@
 	},
 	{
 		"name": "Espresso.log",
-		"url": "",
+		"url": null,
 		"git_url": "https://github.com/aspenjames/espresso-log-simplified",
 		"description": "A tool for coffee shops to record and track their espresso data. This is not a real snippet from that codebase, but demonstrates how to handle quotations in the snippet body.",
 		"snippet_path": ["app", "assets", "code", "espresso.js"],

@@ -1,0 +1,32 @@
+.content {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+ul {
+  list-style-type: circle;
+  color: aliceblue;
+}
+
+li {
+  font-size: 1.25em;
+  line-height: 2;
+}
+
+li a {
+  color: aqua;
+  text-decoration: none;
+  font-size: 1.25em;
+}
+
+hr {
+  width: 85%;
+  margin: auto;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: aliceblue;
+}
