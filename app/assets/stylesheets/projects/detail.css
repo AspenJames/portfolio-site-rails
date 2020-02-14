@@ -34,7 +34,14 @@ div.links {
   border-radius: 20px;
 }
 
-#codemirror * {
-  background-color: #ddd;
+#codemirror div {
+  background-color: #eee;
   border-radius: 20px;
+  height: auto;
+}
+
+pre * {
+  background-color: #eee;
+}
+
 }
