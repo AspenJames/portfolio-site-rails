@@ -5,10 +5,18 @@ function main() {
   async function load() {
 	require(['../assets/codemirror/lib/codemirror', `../assets/codemirror/mode/${codemirrorLang}/${codemirrorLang}`], function(CodeMirror, _) {
 	  CodeMirror(codemirrorDiv, {
-		value: codemirrorSnippet.replace(/&quot;/g, '\"'),
+		value: clean(codemirrorSnippet),
 		mode: codemirrorLang
 	  });
 	});
+  }
+
+  function clean(str) {
+	str = str.replace(/&quot;/g, '\"');
+	str = str.replace(/&amp;/g, '&');
+	str = str.replace(/&lt;/g, '<');
+	str = str.replace(/&gt;/g, '>');
+	return str;
   }
 
   function checkLoaded() {
