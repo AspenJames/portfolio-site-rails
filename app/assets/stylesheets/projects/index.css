@@ -30,3 +30,23 @@ h1 {
   margin-bottom: 20px;
   color: aliceblue;
 }
+
+h2 {
+  font-size: 1.75em;
+  margin-bottom: 20px;
+  color: aliceblue;
+}
+
+#funfact-button {
+  background-color: #FFA4FF;
+  color: #222;
+  border: none;
+  font-size: 1.5em;
+  padding: 10px 15px;
+}
+
+#funfact-div {
+  font-size: 1.5em;
+  color: peachpuff;
+  margin-bottom: 20px;
+}
