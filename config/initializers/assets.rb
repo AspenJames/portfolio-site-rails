@@ -13,5 +13,5 @@ Rails.application.config.assets.paths << Rails.root.join('app', 'assets', 'fonts
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
 Rails.application.config.assets.precompile += %w(static/about.css static/resume.css projects/detail.css projects/index.css)
-Rails.application.config.assets.precompile += %w(projects/detail.js codemirror/mode/javascript/javascript.js codemirror/mode/ruby/ruby.js projects/index.js)
+Rails.application.config.assets.precompile += %w(projects/detail.js codemirror/mode/javascript/javascript.js codemirror/mode/ruby/ruby.js projects/index.js static/about.js static/resume.js)
 Rails.application.config.assets.precompile += %w(favicon.ico)
