@@ -33,4 +33,4 @@ function main() {
   button.addEventListener('click', click);
 }
 
-window.addEventListener('DOMContentLoaded', main);
+window.addEventListener('load', main);
