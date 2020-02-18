@@ -1,5 +1,5 @@
 class Project
-	attr_reader :name, :url, :git_url, :description, :snippet, :snippet_url, :lang
+	attr_reader :name, :url, :git_url, :description, :snippet, :snippet_url, :lang, :short_desc
 
 	def initialize(obj)
 		obj.each do |key, val|
