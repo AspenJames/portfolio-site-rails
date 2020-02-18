@@ -32,7 +32,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 # CORS
-gem 'rack-cors', '~> 1.0', '>= 1.0.3'
+gem 'rack-cors', '~> 1.0'
 
 # Kramdown for markdown parsing
 gem 'kramdown', '~> 2.1'
