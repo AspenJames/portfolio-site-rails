@@ -13,7 +13,7 @@
 		"name": "Tknbn",
 		"url": null,
 		"git_url": "https://github.com/aspenjames/tknbn",
-		"description": "A curses-based terminal kanban-like application (that I haven't finished developing). This is a few lines from the Project model file. A Project has many Items, and I needed a way to find the instance of Project class that had been most recently updated. I needed to account for either an existing project having one of its Items updated as well as a new Project being created without any existing Items, and these two methods did that for me. In the source, the file has Sorbet.rb type annotations, but I've provided the snippet without as well for readability.",
+		"description": "A curses-based terminal kanban-like application (that I haven't finished developing). This is a few lines from the Project model file. A Project has many Items, and I needed a way to find the instance of Project class that had been most recently updated. I needed to account for either an existing project having one of its Items updated as well as a new Project being created without any existing Items, and these two methods did that for me. In the source, the file has Sorbet.rb type annotations, but I've provided the snippet without for readability.",
 		"short_desc": "a kanban board in your terminal",
 		"snippet_path": ["app", "assets", "code", "tknbn.rb"],
 		"snippet_url": "https://github.com/AspenJames/tknbn/blob/582dd7f0cb15b5f51e2d630206ad7b54ec3aa261/lib/tknbn/models/project.rb#L31",
