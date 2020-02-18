@@ -10,10 +10,13 @@
     <%= favicon_link_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
-    <%= stylesheet_link_tag    "#{params[:controller]}/#{params[:action]}" %>
+		<%= stylesheet_link_tag    "#{params[:controller]}/#{params[:action]}"\
+		if PortfolioSiteRails::Application.assets.find_asset("#{params[:controller]}/#{params[:action]}.css") %>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <%= javascript_include_tag 'application', :cache => true, :async => true %>
+		<%= javascript_include_tag "#{params[:controller]}/#{params[:action]}", :cache => true, :async => true\
+		if PortfolioSiteRails::Application.assets.find_asset("#{params[:controller]}/#{params[:action]}.js") %>
   </head>
 
   <body>
@@ -24,7 +27,10 @@
            class=<%= 'active' if params[:action] == 'about' %>>
           About
         </a>
-        <a href='mailto:aspenjames@tqca.org'>Email</a>
+        <a href='/projects'
+					 class=<%= 'active' if params[:controller] == 'projects' %>>
+					Projects
+				</a>
         <a href='https://dev.to/aspenjames' target='_blank' rel='noopener noreferrer'>Blog</a>
         <a href='/resume'
            class=<%= 'active' if params[:action] == 'resume' %>>Resume</a>

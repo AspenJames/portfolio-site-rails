@@ -1,0 +1,48 @@
+.content {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+ul {
+  list-style-type: circle;
+  color: aliceblue;
+}
+
+li {
+  font-size: 1.25em;
+  line-height: 2;
+  border-bottom: 1px grey solid;
+}
+
+li a {
+  color: aqua;
+  text-decoration: none;
+  font-size: 1.25em;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: aliceblue;
+}
+
+h2 {
+  font-size: 1.75em;
+  margin-bottom: 20px;
+  color: aliceblue;
+}
+
+#funfact-button {
+  background-color: #FFA4FF;
+  color: #222;
+  border: none;
+  font-size: 1.5em;
+  padding: 10px 15px;
+}
+
+#funfact-div {
+  font-size: 1.5em;
+  color: peachpuff;
+  margin-bottom: 20px;
+}

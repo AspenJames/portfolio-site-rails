@@ -1,5 +1,8 @@
 {
   "name": "portfolio-site-rails",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "codemirror": "^5.51.0",
+    "requirejs": "^2.3.6"
+  }
 }
