@@ -32,6 +32,7 @@ and tinkering with various computer hardware and operating systems.
 * Built with **Ruby on Rails**
 * Deployed to **Linode** via **Apache2**
 * Uses **Kramdown** to parse from Markdown to HTML
+* Uses **CodeMirror** to display code samples
 </div>
 
 <div class='section section-2 bottom-border' markdown='1'>
