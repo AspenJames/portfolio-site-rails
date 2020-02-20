@@ -93,7 +93,7 @@ and tinkering with various computer hardware and operating systems.
 
 *Seattle, WA*
 
-**Software Engineer I**, Sept 2019 - Present
+**Software Engineer I**, Sept 2019 - Feb 2020
 
 * Full stack developer on New Business Lines
 * Participated in Agile workflow, including estimation, retro, writing tickets
