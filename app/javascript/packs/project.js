@@ -9,10 +9,8 @@ import App from '../app.svelte'
 
 document.addEventListener('DOMContentLoaded', () => {
   const app = new App({
-    target: document.body,
-    props: {
-      name: 'Svelte'
-    }
+    target: document.getElementsByTagName('main')[0],
+    props: {}
   });
 
   window.app = app;
