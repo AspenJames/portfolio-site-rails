@@ -1,9 +1,9 @@
 <h1>Some things I've built for fun</h1>
 <ul>
 <% @projects.each do |project| %>
-	<li>
-		<%= link_to "#{project.name} - #{project.short_desc}", "/projects/#{project.slug}" %>
-	</li>
+  <li>
+    <%= link_to "#{project.name} - #{project.short_desc}", "/projects/#{project.slug}" %>
+  </li>
 <% end %>
 </ul>
 

@@ -10,7 +10,7 @@
     <%= favicon_link_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
-		<%= stylesheet_link_tag    "#{params[:controller]}/#{params[:action]}"%>
+    <%= stylesheet_link_tag    "#{params[:controller]}/#{params[:action]}"%>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <%= javascript_include_tag 'application', :cache => true, :async => true %>
@@ -25,9 +25,9 @@
           About
         </a>
         <a href='/projects'
-					 class=<%= 'active' if params[:controller] == 'projects' %>>
-					Projects
-				</a>
+           class=<%= 'active' if params[:controller] == 'projects' %>>
+          Projects
+        </a>
         <a href='https://dev.to/aspenjames' target='_blank' rel='noopener noreferrer'>Blog</a>
         <a href='/resume'
            class=<%= 'active' if params[:action] == 'resume' %>>Resume</a>
@@ -36,35 +36,35 @@
         <i id='icon' class='fa fa-bars'></i>
       </a>
     </nav>
-		<main class='content'>
-			<%= yield %>
-		</main>
+    <main class='content'>
+      <%= yield %>
+    </main>
   </body>
 
-	<script type='text/javascript'>
-		const nav = document.querySelector('#navbar')
-		const i = document.querySelector('#icon')
-		const content = document.querySelector('main.content')
+  <script type='text/javascript'>
+    const nav = document.querySelector('#navbar')
+    const i = document.querySelector('#icon')
+    const content = document.querySelector('main.content')
 
-		function toggleMenu() {
-			if (nav.style.visibility === 'visible') {
-				nav.style.visibility = 'hidden';
-				nav.style.height = '25px';
-				nav.style.borderBottom = '';
-				content.style.opacity = '1';
-				setClass(i, 'fa fa-bars');
-			} else {
-				nav.style.visibility = 'visible';
-				nav.style.height = 'auto';
-				nav.style.borderBottom = '1px outset';
-				content.style.opacity = '0.25';
-				setClass(i, 'fa fa-times');
-			}
-		}
+    function toggleMenu() {
+      if (nav.style.visibility === 'visible') {
+        nav.style.visibility = 'hidden';
+        nav.style.height = '25px';
+        nav.style.borderBottom = '';
+        content.style.opacity = '1';
+        setClass(i, 'fa fa-bars');
+      } else {
+        nav.style.visibility = 'visible';
+        nav.style.height = 'auto';
+        nav.style.borderBottom = '1px outset';
+        content.style.opacity = '0.25';
+        setClass(i, 'fa fa-times');
+      }
+    }
 
-		function setClass(elem, klassList) {
-			elem.classList = [];
-			klassList.split(' ').forEach(c => elem.classList.add(c));
-		}
-	</script>
+    function setClass(elem, klassList) {
+      elem.classList = [];
+      klassList.split(' ').forEach(c => elem.classList.add(c));
+    }
+  </script>
 </html>

@@ -17,73 +17,73 @@
 
 /* Global styles */
 * {
-	margin: 0;
-	font-family: 'JetBrainsMono', 'Roboto', 'Oxygen',
-							 'Ubunbtu', 'Fira Sans', 'Droid Sans',
-							 'Helvetica Neue', sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-mox-osx-font-smoothing: grayscale;
-	background-color: #222;
+  margin: 0;
+  font-family: 'JetBrainsMono', 'Roboto', 'Oxygen',
+               'Ubunbtu', 'Fira Sans', 'Droid Sans',
+               'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -mox-osx-font-smoothing: grayscale;
+  background-color: #222;
 }
 
 /* Web styles -- Navbar */
 #navbar {
-	position: relative;
-	margin: 20px 10px 20px;
-	text-align: center;
+  position: relative;
+  margin: 20px 10px 20px;
+  text-align: center;
 }
 
 #navbar img {
-	width: 100px;
-	height: auto;
-	border-radius: 100px;
-	vertical-align: middle;
+  width: 100px;
+  height: auto;
+  border-radius: 100px;
+  vertical-align: middle;
 }
 
 #navbar a {
-	display: inline-block;
-	vertical-align: middle;
-	color: aqua;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 2em;
+  display: inline-block;
+  vertical-align: middle;
+  color: aqua;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2em;
 }
 
 #navbar a:hover {
-	cursor: pointer;
-	text-decoration: underline;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 #icon {
-	position: absolute;
-	margin: 10px 20px;
-	top: 0;
-	right: 0;
-	display: none;
-	color: aliceblue;
+  position: absolute;
+  margin: 10px 20px;
+  top: 0;
+  right: 0;
+  display: none;
+  color: aliceblue;
 }
 
 #navbar a.active {
-	color: aliceblue;
+  color: aliceblue;
 }
 
 /* Mobile styles -- Navbar */
 @media only screen and (max-width: 900px) {
-	#navbar {
-		visibility: hidden;
-		height: 25px;
-		margin-bottom: 10px;
-	}
+  #navbar {
+    visibility: hidden;
+    height: 25px;
+    margin-bottom: 10px;
+  }
 
-	#icon {
-		display: block;
-	}
+  #icon {
+    display: block;
+  }
 
-	#navbar a {
-		display: block;
-	}
+  #navbar a {
+    display: block;
+  }
 
-	#navbar img {
-		display: none;
-	}
+  #navbar img {
+    display: none;
+  }
 }
