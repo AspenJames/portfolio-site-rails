@@ -2,7 +2,13 @@
   "name": "portfolio-site-rails",
   "private": true,
   "dependencies": {
+    "@rails/webpacker": "4.2.2",
     "codemirror": "^5.51.0",
-    "requirejs": "^2.3.6"
+    "requirejs": "^2.3.6",
+    "svelte": "^3.19.1",
+    "svelte-loader": "^2.13.6"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.10.3"
   }
 }

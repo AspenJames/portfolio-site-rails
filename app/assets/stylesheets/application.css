@@ -49,6 +49,11 @@
 	font-size: 2em;
 }
 
+#navbar a:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
 #icon {
 	position: absolute;
 	margin: 10px 20px;
