@@ -2,12 +2,6 @@ require 'rails_helper'
 require 'airborne'
 
 RSpec.describe "JSON resources" do
-  file_path = File.join([Rails.root, 'app', 'assets', 'json', 'projects.json'])
-  file_data = File.read(file_path)
-  PROJECTS_JSON = JSON.parse(file_data)
-  PROJECT_OBJECTS = PROJECTS_JSON.map{|p| Project.new(p)}
-  VALID_SLUGS = PROJECTS_JSON.map{|r| r["name"].parameterize}
-  REQUIRED_KEYS = [:name, :git_url, :short_desc, :description, :snippet, :snippet_url, :lang]
 
   describe "/projects.json" do
     it "should return an array" do
@@ -19,7 +13,7 @@ RSpec.describe "JSON resources" do
     it "should contain as many records as projects.json file" do
       get '/projects.json'
 
-      expect(json_body.length).to eq(PROJECTS_JSON.length)
+      expect(json_body.length).to eq(projects_json.length)
     end
 
     context "each record" do
@@ -27,7 +21,7 @@ RSpec.describe "JSON resources" do
         get '/projects.json'
 
         json_body.each_with_index do |record|
-          REQUIRED_KEYS.each do |key|
+          required_keys.each do |key|
             expect(record[key]).not_to be nil
           end
         end
@@ -36,7 +30,7 @@ RSpec.describe "JSON resources" do
   end
 
   describe "/projects/:slug.json" do
-    VALID_SLUGS.each do |slug|
+    valid_slugs.each do |slug|
       context "#{slug}" do
         it "returns an object with the proper types" do
           get "/projects/#{slug}.json"
@@ -56,11 +50,11 @@ RSpec.describe "JSON resources" do
         it "matches attributes for #{slug}" do
           get "/projects/#{slug}.json"
 
-          proj = PROJECT_OBJECTS.find{|p| p.slug == slug}
+          proj = projects.find{|p| p.slug == slug}
 
           expect(proj).not_to be nil
 
-          REQUIRED_KEYS.each do |key|
+          required_keys.each do |key|
             expect(json_body[key]).to eq(proj.send(key))
           end
         end
