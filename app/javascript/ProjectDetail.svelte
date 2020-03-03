@@ -55,6 +55,11 @@ a:hover {
   cursor: pointer;
 }
 
+span {
+  font-size: inherit;
+  color: aliceblue;
+}
+
 @media only screen and (max-width: 900px) {
   h1 {
     font-size: 2.5em;
@@ -63,6 +68,11 @@ a:hover {
   p {
     font-size: 1em;
     line-height: 1.3;
+  }
+
+  span {
+    font-size: inherit;
+    color: aliceblue;
   }
 
   div.links {
@@ -76,7 +86,7 @@ a:hover {
 
   <div class='links'>
   {#if project.url}
-    <a href={project.url}>Hosted Project</a>
+    <a href={project.url}>Hosted Project</a> <span> | </span>
   {/if}
 
   {#if project.git_url}
