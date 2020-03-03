@@ -15,6 +15,10 @@
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 
 require File.expand_path('./support/helpers', __dir__)
+require 'capybara/rspec'
+
+Capybara.server = :puma, { Silent: true }
+
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
