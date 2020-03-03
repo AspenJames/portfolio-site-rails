@@ -186,8 +186,8 @@ DEPENDENCIES
   chromedriver-helper
   kramdown (~> 2.1)
   listen (>= 3.0.5, < 3.2)
-  puma (~> 3.11)
-  rack-cors (~> 1.0, >= 1.0.3)
+  puma (~> 3.12)
+  rack-cors (~> 1.0)
   rails (~> 5.2.3)
   sass-rails (~> 5.0)
   selenium-webdriver
@@ -201,4 +201,4 @@ RUBY VERSION
    ruby 2.6.0p0
 
 BUNDLED WITH
-   2.0.1
+   2.1.4
