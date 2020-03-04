@@ -49,9 +49,6 @@ RSpec.describe "/projects", type: :feature do
     end
 
     context "on clicking the funfact-button", js: true do
-      # Run js tests headless
-      Capybara.javascript_driver = :selenium_headless
-
       after(:each) do
         page.cleanup!
       end

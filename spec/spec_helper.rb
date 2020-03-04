@@ -18,6 +18,9 @@ require File.expand_path('./support/helpers', __dir__)
 require 'capybara/rspec'
 
 Capybara.server = :puma, { Silent: true }
+# Run js tests headless
+Capybara.javascript_driver = :selenium_headless
+
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
