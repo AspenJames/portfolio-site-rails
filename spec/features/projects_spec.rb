@@ -1,6 +1,12 @@
 require 'rails_helper'
 
 RSpec.describe "/projects", type: :feature do
+  it "has class 'active' on navlink for '/projects'" do
+    visit '/projects'
+    link = find_link(href: '/projects')
+    expect(link).to be_active()
+  end
+
   it "contains a heading and ul" do
     visit '/projects'
     expect(page).to have_selector("h1")
