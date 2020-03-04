@@ -15,6 +15,7 @@
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 
 require File.expand_path('./support/helpers', __dir__)
+require File.expand_path('./support/nav_matcher', __dir__)
 require 'capybara/rspec'
 
 Capybara.server = :puma, { Silent: true }
@@ -53,8 +54,9 @@ RSpec.configure do |config|
   # triggering implicit auto-inclusion in groups with matching metadata.
   config.shared_context_metadata_behavior = :apply_to_host_groups
 
-  # Include + Extend helper module
+  # Include + Extend helper modules
   config.include Helpers
+  config.include NavMatcher
   config.extend Helpers
 
 # The settings below are suggested to provide a good initial experience
