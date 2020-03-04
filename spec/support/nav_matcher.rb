@@ -26,14 +26,19 @@ module NavMatcher
       get_active_links(link).to_a.map{|l| l[:href]}
     end
 
-    failure_message do
+    failure_message do |actual|
       case @failure_reason
       when :none_active
         "No active links found"
       when :multiple_active
-        "Expected one active link, multiple returned:\n #{get_active_link_hrefs(actual)}"
+        "Expected one active link, multiple returned:\n "\
+          "#{get_active_link_hrefs(actual)}"
+      else
+        "Expected '#{actual[:href]}' to be active, "\
+          "instead found '#{get_active_link_hrefs(actual).first}''"
       end
     end
+
   end
 
   matcher :match_href do |expected|
