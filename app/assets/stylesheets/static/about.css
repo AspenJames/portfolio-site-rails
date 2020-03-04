@@ -19,6 +19,12 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: peachpuff;
+}
+
 span#contact {
   font-size: 1.35em;
 }

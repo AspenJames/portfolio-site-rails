@@ -11,7 +11,7 @@ ul {
 li {
   font-size: 1.25em;
   line-height: 2;
-  list-style-type: circle;
+  list-style-type: none;
 }
 
 li a {
@@ -44,6 +44,7 @@ h2 {
   border: none;
   font-size: 1.5em;
   padding: 10px 15px;
+  margin-bottom: 20px;
 }
 
 #funfact-div {
