@@ -1,6 +1,6 @@
 <script>
 import CodeMirror from 'codemirror';
-import 'codemirror/theme/base16-dark.css';
+import 'codemirror/theme/erlang-dark.css';
 
 
 export let project;
@@ -15,7 +15,7 @@ export let project;
       mode: project.lang,
       readOnly: true,
       inputStyle: "contenteditable",
-      theme: "base16-dark",
+      theme: "erlang-dark",
     });
   }
 
