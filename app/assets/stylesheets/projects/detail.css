@@ -15,11 +15,11 @@
 }
 
 #codemirror div {
-  background-color: #eee;
+  background-color: #111;
   border-radius: 20px;
   height: auto;
 }
 
 pre * {
-  background-color: #eee;
+  background-color: #111;
 }

@@ -1,5 +1,7 @@
 <script>
 import CodeMirror from 'codemirror';
+import 'codemirror/theme/base16-dark.css';
+
 
 export let project;
 
@@ -10,7 +12,10 @@ export let project;
     const el = document.querySelector('#codemirror')
     CodeMirror(el, {
       value: project.snippet,
-      mode: project.lang
+      mode: project.lang,
+      readOnly: true,
+      inputStyle: "contenteditable",
+      theme: "base16-dark",
     });
   }
 
