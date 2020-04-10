@@ -45,16 +45,37 @@ write only the code necessary. Here are some more specifics:
 * [Ruby version 2.6.0][rb]
 * [Rails version 5.2.3][rails]
 * [kramdown version 2.1][kramdown]
-* (Coming soon from here on down - check out the 'projects' branch)
 * [CodeMirror][codemirror]
 * [RequireJS][requirejs]
+
+### Docker
+
+This branch is a WIP, 'dockerizing' this application. To run via docker, first
+[ensure you have docker installed](https://www.docker.com/get-started).
+* Build
+```shell
+docker build .
+```
+* Get image id from above, then run
+```shell
+docker run -p 5000:3000 <imageID>
+```
+
+To simplify these, use a tag - something like `docker-portfolio`:
+```shell
+docker build -t docker-portfolio .
+docker run -p 5000:3000 docker-portfolio
+```
+
+This should get you a development server running inside of a Docker container,
+mapped to `localhost:5000`.
 
 ## Development
 
 If you would like to get this application running locally, first install all
 requirements:
 
-* [Ruby v2.6.0][rb]
+* [Ruby v2.6.6][rb]
 * [Node (LTS recommended)][node]
 
 Once we have those, we can clone the repository:
