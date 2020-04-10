@@ -13,5 +13,7 @@ COPY ./ ./
 RUN bundle install
 RUN yarn install
 
-EXPOSE 3000
+# '-b' is necessary to bind the server to 0.0.0.0,
+# since the port is mapped externally to 'localhost',
+# yet mapped internally to '0.0.0.0'.
 CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0"]
