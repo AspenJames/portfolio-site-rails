@@ -12,8 +12,7 @@
     <%= stylesheet_link_tag "reset.css" %>
     <%= stylesheet_link_tag "reveal.css" %>
     <%= stylesheet_link_tag "zenburn.css" %>
-    <%= stylesheet_link_tag "theme/black.css" %>
-    <%= stylesheet_link_tag "presentations/coffee.css"%>
+    <%= stylesheet_link_tag "theme/#{@theme}.css"%>
   </head>
   <body>
     <div class="reveal">
@@ -119,8 +118,8 @@
             <h1 class="pink">Step Three</h1>
               <h3 class="fragment blue">Use water at the proper temperature</h3>
               <p class="fragment">The favorable compounds within roasted coffee are soluble in water within a specific temperature range</p>
-              <p class="fragment">The exact range depends on several factors, but generally will be between 195&deg;F (&sim;90.5&deg;C) and 205&deg;F (&sim;96.1&deg;C)</p>
-              <p class="fragment">If you do not have a thermometer, water that is approximately 30 seconds off a full boil will be fine</p>
+              <p class="fragment">The exact range depends on several factors, but generally will be between 195&deg;F and 205&deg;F</p>
+              <p class="fragment">Water that is approximately 30 seconds off a full boil should be about the right temperature</p>
           </section>
 
           <section> <!-- 5.5 -->
@@ -148,5 +147,36 @@
     <%= javascript_include_tag "reveal", :cache => true %>
     <%= javascript_include_tag "presentations/coffee", :cache => true, :async => true %>
     <script>window.addEventListener('load', Reveal.initialize)</script>
+    <style>
+    section .blue {
+      color: <%= @blue %>;
+    }
+
+    section .green {
+      color: <%= @green %>;
+    }
+
+    section .pink {
+      color: <%= @pink %>;
+    }
+
+    button.backgroundToggle {
+      background-color: #E7E7E7;
+      color: black;
+      border: 4px solid #333;
+      border-radius: 8px;
+      padding: 15px 32px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      transition-duration: 0.4s;
+    }
+
+    button.backgroundToggle:hover {
+      background-color: #333;
+      color: #E7E7E7;
+    }
+    </style>
   </body>
 </html>

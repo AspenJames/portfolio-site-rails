@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>DTL: Home Coffee</title>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content='"Up Your Home Coffee Game" presentation for Drink, Talk, Learn @Skilljar 17 April, 2020'>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= favicon_link_tag %>
+
+    <%= stylesheet_link_tag "reset.css" %>
+    <%= stylesheet_link_tag "reveal.css" %>
+    <%= stylesheet_link_tag "zenburn.css" %>
+    <%= stylesheet_link_tag "theme/black.css"%>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1 style="text-transform: none;">"<span class='green'><%= @theme %></span>" is not valid theme</h1>
+          <p><span class='green'>"theme"</span> must be one of <span class='pink'><%= @themes %></span></p>
+          <% sample_theme = @themes.sample %>
+          <p>Give <a href="/presentations/coffee?theme=<%= sample_theme %>"><%= sample_theme %></a> a try</p>
+        </section>
+      </div>
+    </div>
+
+    <%= javascript_include_tag "reveal", :cache => true%>
+    <script>window.addEventListener('load', Reveal.initialize)</script>
+    <style>
+    .green {
+      color: #99FFCC;
+    }
+    .pink {
+      color: #FFB3D9;
+    }
+    </style>
+  </body>
+</html>
