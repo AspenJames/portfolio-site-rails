@@ -55,6 +55,7 @@
           <section data-background-image="https://images.pexels.com/photos/1224219/pexels-photo-1224219.jpeg?auto=compress&cs=tinysrgb&dpr=2" data-background-opacity="0.5"> <!-- 3.4 -->
             <h1>Coffee is a beverage</h1>
               <p class="fragment">The fruit of the coffee tree is harvested, processed, roasted, and prepared in any variety of ways to make the drink that so many of us love!</p>
+              <p class="fragment">The whole process from farm to cup is a beautiful mix of culture, science, skill, and a lot of passion</p>
             <button class="backgroundToggle">I can't read this</button>
             <p class="credit">Photo credit <a href="https://images.pexels.com/photos/1224219/pexels-photo-1224219.jpeg?auto=compress&cs=tinysrgb&dpr=2" target="_blank" rel="noopener noreferrer">Pixabay</a></p>
           </section>
@@ -124,23 +125,59 @@
 
           <section> <!-- 5.5 -->
             <h1 class="pink">Step Four</h1>
+              <h3 class="fragment blue">Weigh your coffee and water</h3>
+              <p class="fragment">Controlling the ratio of coffee to water by weight gives a powerful amount of control over the concentration and extraction of your coffee</p>
+              <p class="fragment">Invest in a gram scale with at least 0.5 gram resolution, and start at a <span class="green">1</span>:<span class="blue">16</span> ratio of <span class="green">coffee</span>:<span class="blue">water</span></p>
+          </section>
+
+          <section> <!-- 5.6 -->
+            <h1 class="pink">Step Five</h1>
               <h3 class="fragment blue">Invest in a good burr grinder</h3>
               <p class="fragment">Blade grinders chop coffee instead of precisely grinding, leading to an uneven particle size distribution</p>
               <p class="fragment">You don't have to go all&hybull;out on whatever state&hybull;of&hybull;the&hybull;art technology exists - an adjustable burr grinder from a good manufacturer will do - I even recommend getting a refurbished one</p>
           </section>
 
-          <section> <!-- 5.6 -->
-            <h1 class="pink">Step Five</h1>
+          <section> <!-- 5.7 -->
+            <h1 class="pink">Step Six</h1>
               <h3 class="fragment blue">Keep a coffee journal</h3>
-              <p class="fragment">Keeping a log of the coffee you brew will help you improve consistency as well as identify coffees and methods that work for you</p>
-              <p class="fragment">I recommend making note of what coffee you're brewing, when it was roasted, how you prepared it, what you taste, and, most importantly, how you felt about your coffee</p>
-              <p class="fragment">As with most things, a bit of process can greatly improve results</p>
+              <p class="fragment">This will help you improve consistency as well as identify coffees and methods that work for you</p>
+              <p class="fragment">Make note of what coffee you're brewing, how you prepared it, what you taste, and, most importantly, how you felt about your coffee</p>
+              <p class="fragment">A bit of process can greatly improve results</p>
           </section>
         </section>
 
-        <%# <section> <!-- 6.1 -->
-          <h1>Resources</h1>
-        </section> %>
+        <section>
+          <section> <!-- 6.1 -->
+            <h1>Resources</h1>
+          </section>
+
+          <section> <!-- 6.2 -->
+            <h1 class="green">Specialty Coffee Association</h1>
+            <p>The <a href="https://sca.coffee/" target="_blank" rel="noopener noreferrer">SCA</a> is a great resource for coffee quality - they literally set the standard(s)!</p>
+            <p>One especially useful resource is their <a href="https://sca.coffee/certified-home-brewer" target="_blank" rel="noopener noreferrer">Certified Home Brewer</a> list</p>
+          </section>
+
+          <section data-background-image="/SCA_TasterWheel.svg" data-background-opacity="0.5"> <!-- 6.3 -->
+            <h1 class='black'>SCA Flavor Wheel</h1>
+              <p class='black'>The <a href="https://sca.coffee/research/coffee-tasters-flavor-wheel" target="_blank" rel="noopener noreferrer">SCA Flavor Wheel</a> can help guide you in tasting coffee and developing your palate</p>
+              <button class="backgroundToggle">I can't read this</button>
+          </section>
+
+          <section> <!-- 6.4 -->
+            <h1 class="green">YouTube</h1>
+              <p class="fragment">There are so many things you can learn on YouTube...</p>
+              <div class="fragment">
+                <p>Here are some useful places to start:</p>
+                <ul>
+                  <li><a href="https://www.youtube.com/watch?v=fl8hPfs3o8c" target="_blank" rel="noopener noreferrer">Hario v60 - Stumptown Coffee Roasters</a></li>
+                  <li><a href="https://www.youtube.com/watch?v=2Sela-8BF9Q" target="_blank" rel="noopener noreferrer">Chemex - HowCast</a></li>
+                  <li><a href="https://www.youtube.com/watch?v=mupueSMHBJQ&list=PLZ5Na-9NWGIroUrnxF47ZH7KLF26OCjl9&index=4&t=0s" target="_blank" rel="noopener noreferrer">Kalita Wave - Nick Cho</a></li>
+                  <li><a href="https://www.youtube.com/watch?v=pPM8mcqHxes&list=PLZ5Na-9NWGIroUrnxF47ZH7KLF26OCjl9&index=2" target="_blank" rel="noopener noreferrer">Iced Coffee - Peter Guiliano</a></li>
+                  <li><a href="https://www.youtube.com/watch?v=Jjfxr24iuuw">Espresso - ChefSteps</a></li>
+                </ul>
+              </div>
+          </section>
+        </section>
       </div>
     </div>
 
@@ -148,6 +185,10 @@
     <%= javascript_include_tag "presentations/coffee", :cache => true, :async => true %>
     <script>window.addEventListener('load', Reveal.initialize)</script>
     <style>
+    section .black {
+      color: black;
+    }
+
     section .blue {
       color: <%= @blue %>;
     }
