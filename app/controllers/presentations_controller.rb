@@ -1,7 +1,7 @@
 class PresentationsController < ApplicationController
   def coffee
-    @dark_themes = %w(black blood league moon night)
-    @light_themes = %w(beige serif simple sky solarized white)
+    @dark_themes = %w(black blood league moon)
+    @light_themes = %w(beige hull-blue serif simple sky solarized white)
     @themes = @dark_themes + @light_themes
 
     @theme = params['theme'] || 'black'
