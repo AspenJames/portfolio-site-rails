@@ -8,10 +8,20 @@ Rails.application.config.assets.version = '1.0'
 # Add Yarn node_modules folder to the asset load path.
 Rails.application.config.assets.paths << Rails.root.join('node_modules')
 Rails.application.config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+Rails.application.config.assets.paths << Rails.root.join('lib', 'assets', 'revealjs', 'css')
+Rails.application.config.assets.paths << Rails.root.join('lib', 'assets', 'revealjs', 'js')
+Rails.application.config.assets.paths << Rails.root.join('lib', 'assets', 'revealjs', 'lib', 'css')
+Rails.application.config.assets.paths << Rails.root.join('lib', 'assets', 'revealjs', 'lib', 'font')
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
-Rails.application.config.assets.precompile += %w(static/about.css static/resume.css projects/detail.css projects/index.css)
-Rails.application.config.assets.precompile += %w(projects/detail.js codemirror/mode/javascript/javascript.js codemirror/mode/ruby/ruby.js projects/index.js static/about.js static/resume.js)
+
+# CSS
+Rails.application.config.assets.precompile += %w(static/about.css static/resume.css projects/detail.css projects/index.css presentations/coffee.css)
+# JS
+Rails.application.config.assets.precompile += %w(projects/detail.js codemirror/mode/javascript/javascript.js codemirror/mode/ruby/ruby.js projects/index.js static/about.js static/resume.js presentations/coffee.js)
+# MISC
 Rails.application.config.assets.precompile += %w(favicon.ico)
+# LIBS
+Rails.application.config.assets.precompile += %w(css/reset.css css/reveal.css css/theme/black.css lib/css/zenburn.css js/reveal.js source-sans-pro/source-sans-pro.css)

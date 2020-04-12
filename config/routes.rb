@@ -6,4 +6,6 @@ Rails.application.routes.draw do
 
   get '/projects', :to => 'projects#index'
   get '/projects/:slug', :to => 'projects#detail', as: 'project'
+
+  get '/presentations/coffee', :to => 'presentations#coffee'
 end
