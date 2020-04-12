@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get '/projects/:slug', :to => 'projects#detail', as: 'project'
 
   get '/presentations/coffee', :to => 'presentations#coffee'
+  get '/presentations/vr', :to => 'presentations#vr'
 end

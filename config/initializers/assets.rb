@@ -20,7 +20,7 @@ Rails.application.config.assets.paths << Rails.root.join('lib', 'assets', 'revea
 # CSS
 Rails.application.config.assets.precompile += %w(static/about.css static/resume.css projects/detail.css projects/index.css presentations/coffee.css)
 # JS
-Rails.application.config.assets.precompile += %w(projects/detail.js codemirror/mode/javascript/javascript.js codemirror/mode/ruby/ruby.js projects/index.js static/about.js static/resume.js presentations/coffee.js)
+Rails.application.config.assets.precompile += %w(projects/detail.js codemirror/mode/javascript/javascript.js codemirror/mode/ruby/ruby.js projects/index.js static/about.js static/resume.js presentations/toggleBackground.js)
 # MISC
 Rails.application.config.assets.precompile += %w(favicon.ico)
 # LIBS

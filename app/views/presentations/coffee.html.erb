@@ -1,220 +1,159 @@
-<!DOCTYPE html>
-<html lang='en'>
-  <head>
-    <title>DTL: Home Coffee</title>
-    <meta charset='UTF-8'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="description" content='"Up Your Home Coffee Game" presentation for Drink, Talk, Learn @Skilljar 17 April, 2020'>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-    <%= favicon_link_tag %>
+<section> <!-- 1.1 -->
+  <h1>Up Your Home Coffee Game</h1>
+    <h2 class='blue'>Aspen James</h2>
+    <p class='pink'>Drink, Talk, Learn @ Skilljar</p>
+</section>
 
-    <%= stylesheet_link_tag "reset.css" %>
-    <%= stylesheet_link_tag "reveal.css" %>
-    <%= stylesheet_link_tag "theme/#{@theme}.css"%>
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
-        <section> <!-- 1.1 -->
-          <h1>Up Your Home Coffee Game</h1>
-            <h2 class='blue'>Aspen James</h2>
-            <p class='pink'>Drink, Talk, Learn @ Skilljar</p>
-        </section>
+<section> <!-- 2.1 -->
+  <h1>Recognition of land</h1>
+    <p class="fragment blue">I would like to acknowledge that we are on the unceded traditional land of the first people of Seattle, the Duwamish People past and present. I honor with gratitude the land itself and the Duwamish Tribe.</p>
+    <p class="fragment pink">For more information about the Duwamish People, visit <a href="https://www.duwamishtribe.org">duwamishtribe.org</a></p>
+</section>
 
-        <section> <!-- 2.1 -->
-          <h1>Recognition of land</h1>
-            <p class="fragment blue">I would like to acknowledge that we are on the unceded traditional land of the first people of Seattle, the Duwamish People past and present. I honor with gratitude the land itself and the Duwamish Tribe.</p>
-            <p class="fragment pink">For more information about the Duwamish People, visit <a href="https://www.duwamishtribe.org">duwamishtribe.org</a></p>
-        </section>
+<section>
+  <section> <!-- 3.1 -->
+    <h1>What is coffee?</h1>
+  </section>
 
-        <section>
-          <section> <!-- 3.1 -->
-            <h1>What is coffee?</h1>
-          </section>
+  <section data-background-image="https://images.pexels.com/photos/1556665/pexels-photo-1556665.jpeg?auto=compress&cs=tinysrgb&dpr=2" data-background-opacity="0.5"> <!-- 3.2 -->
+    <h1>Coffee is a plant</h1>
+      <p class="fragment">Specifically, a tree</p>
+      <p class="fragment">Most specialty coffee comes from <em>Coffea Arabica</em></p>
+      <p class="fragment"><em>Coffea Robusta</em> is sometimes used</p>
+    <button class="backgroundToggle">I can't read this</button>
+    <p class="credit">Photo credit: <a href="https://www.pexels.com/photo/red-and-yellow-coffee-berries-on-branch-1556665/" target="_blank" rel="noopener noreferrer">Daniel Reche</a></p>
+  </section>
 
-          <section data-background-image="https://images.pexels.com/photos/1556665/pexels-photo-1556665.jpeg?auto=compress&cs=tinysrgb&dpr=2" data-background-opacity="0.5"> <!-- 3.2 -->
-            <h1>Coffee is a plant</h1>
-              <p class="fragment">Specifically, a tree</p>
-              <p class="fragment">Most specialty coffee comes from <em>Coffea Arabica</em></p>
-              <p class="fragment"><em>Coffea Robusta</em> is sometimes used</p>
-            <button class="backgroundToggle">I can't read this</button>
-            <p class="credit">Photo credit: <a href="https://www.pexels.com/photo/red-and-yellow-coffee-berries-on-branch-1556665/" target="_blank" rel="noopener noreferrer">Daniel Reche</a></p>
-          </section>
+  <section data-background-image="https://images.pexels.com/photos/1459339/pexels-photo-1459339.jpeg?auto=compress&cs=tinysrgb&dpr=2" data-background-opacity="0.5"> <!-- 3.3 -->
+    <h1>Coffee is a fruit</h1>
+      <p class="fragment">Very similar to a cherry, containing a pit</p>
+      <p class="fragment">It is edible and can be made into a tea</p>
+      <p class="fragment">Like other fruits, it is seasonal and grows best in a specific climate</p>
+    <button class="backgroundToggle">I can't read this</button>
+    <p class="credit">Photo credit: <a href="https://www.pexels.com/photo/assorted-fruits-on-person-s-hand-1459339/" target="_blank" rel="noopener noreferrer">Livier Garcia</a></p>
+  </section>
 
-          <section data-background-image="https://images.pexels.com/photos/1459339/pexels-photo-1459339.jpeg?auto=compress&cs=tinysrgb&dpr=2" data-background-opacity="0.5"> <!-- 3.3 -->
-            <h1>Coffee is a fruit</h1>
-              <p class="fragment">Very similar to a cherry, containing a pit</p>
-              <p class="fragment">It is edible and can be made into a tea</p>
-              <p class="fragment">Like other fruits, it is seasonal and grows best in a specific climate</p>
-            <button class="backgroundToggle">I can't read this</button>
-            <p class="credit">Photo credit: <a href="https://www.pexels.com/photo/assorted-fruits-on-person-s-hand-1459339/" target="_blank" rel="noopener noreferrer">Livier Garcia</a></p>
-          </section>
+  <section data-background-image="https://images.pexels.com/photos/1224219/pexels-photo-1224219.jpeg?auto=compress&cs=tinysrgb&dpr=2" data-background-opacity="0.5"> <!-- 3.4 -->
+    <h1>Coffee is a beverage</h1>
+      <p class="fragment">The fruit of the coffee tree is harvested, processed, roasted, and prepared in any variety of ways to make the drink that so many of us love!</p>
+      <p class="fragment">The whole process from farm to cup is a beautiful mix of culture, science, skill, and a lot of passion</p>
+    <button class="backgroundToggle">I can't read this</button>
+    <p class="credit">Photo credit <a href="https://images.pexels.com/photos/1224219/pexels-photo-1224219.jpeg?auto=compress&cs=tinysrgb&dpr=2" target="_blank" rel="noopener noreferrer">Pixabay</a></p>
+  </section>
+</section>
 
-          <section data-background-image="https://images.pexels.com/photos/1224219/pexels-photo-1224219.jpeg?auto=compress&cs=tinysrgb&dpr=2" data-background-opacity="0.5"> <!-- 3.4 -->
-            <h1>Coffee is a beverage</h1>
-              <p class="fragment">The fruit of the coffee tree is harvested, processed, roasted, and prepared in any variety of ways to make the drink that so many of us love!</p>
-              <p class="fragment">The whole process from farm to cup is a beautiful mix of culture, science, skill, and a lot of passion</p>
-            <button class="backgroundToggle">I can't read this</button>
-            <p class="credit">Photo credit <a href="https://images.pexels.com/photos/1224219/pexels-photo-1224219.jpeg?auto=compress&cs=tinysrgb&dpr=2" target="_blank" rel="noopener noreferrer">Pixabay</a></p>
-          </section>
-        </section>
+<section>
+  <section> <!-- 4.1 -->
+    <h1>What makes a coffee good?</h1>
+  </section>
 
-        <section>
-          <section> <!-- 4.1 -->
-            <h1>What makes a coffee good?</h1>
-          </section>
+  <section> <!-- 4.2 -->
+    <h1 class="green">Green Coffee Quality</h1>
+      <p class="fragment">Coffee cherries : Coffee :: Grapes : Wine</p>
+      <p class="fragment">Soil, weather conditions, and water level are some of the factors that affect a crop's quality</p>
+      <p class="fragment">Quality cannot be added after harvest, only degraded</p>
+  </section>
 
-          <section> <!-- 4.2 -->
-            <h1 class="green">Green Coffee Quality</h1>
-              <p class="fragment">Coffee cherries : Coffee :: Grapes : Wine</p>
-              <p class="fragment">Soil, weather conditions, and water level are some of the factors that affect a crop's quality</p>
-              <p class="fragment">Quality cannot be added after harvest, only degraded</p>
-          </section>
+  <section> <!-- 4.3 -->
+    <h1 class="green">Freshness</h1>
+      <p class="fragment">Coffee comes from a fruit - like all other produce, it will degrade over time</p>
+      <p class="fragment">The fresher the better! Coffee should be roasted within months of being harvested, brewed within weeks of being roasted, and consumed within hours of being brewed</p>
+  </section>
 
-          <section> <!-- 4.3 -->
-            <h1 class="green">Freshness</h1>
-              <p class="fragment">Coffee comes from a fruit - like all other produce, it will degrade over time</p>
-              <p class="fragment">The fresher the better! Coffee should be roasted within months of being harvested, brewed within weeks of being roasted, and consumed within hours of being brewed</p>
-          </section>
+  <section> <!-- 4.4 -->
+    <h1 class="green">Roast</h1>
+      <p class="fragment">Coffee seeds must be roasted before they can be ground and brewed</p>
+      <p class="fragment">Roasting coffee is an extremely complex process - endothermic at first, then turning exothermic, making the process hard to control</p>
+      <p class="fragment">The rate and level of roast will ultimately determine the quality of the roasted coffee</p>
+  </section>
 
-          <section> <!-- 4.4 -->
-            <h1 class="green">Roast</h1>
-              <p class="fragment">Coffee seeds must be roasted before they can be ground and brewed</p>
-              <p class="fragment">Roasting coffee is an extremely complex process - endothermic at first, then turning exothermic, making the process hard to control</p>
-              <p class="fragment">The rate and level of roast will ultimately determine the quality of the roasted coffee</p>
-          </section>
+  <section> <!-- 4.5 -->
+    <h1 class="green">Brew</h1>
+      <p class="fragment">The final stage of preparation often gets the most attention, and fittingly so since this is most in our control</p>
+      <p class="fragment">The size and evenness of the ground coffee particles, the quality and temperature of the water, the amount of time the water is in contact with the coffee, and the amount of agitation will all affect the flavor of the resulting cup</p>
+  </section>
+</section>
 
-          <section> <!-- 4.5 -->
-            <h1 class="green">Brew</h1>
-              <p class="fragment">The final stage of preparation often gets the most attention, and fittingly so since this is most in our control</p>
-              <p class="fragment">The size and evenness of the ground coffee particles, the quality and temperature of the water, the amount of time the water is in contact with the coffee, and the amount of agitation will all affect the flavor of the resulting cup</p>
-          </section>
-        </section>
+<section>
+  <section> <!-- 5.1 -->
+    <h1>That's so much!</h1>
+      <p class="fragment">There are indeed many, many factors that determine the flavor and quality of a cup of coffee</p>
+      <p class="fragment">Luckily, there are also several easy steps we can take to improve our coffee brewing skills!</p>
+      <p class="fragment">These some of the most important and impactful changes we can make to improve our coffee, and luckily most of them are cheap or free</p>
+  </section>
 
-        <section>
-          <section> <!-- 5.1 -->
-            <h1>That's so much!</h1>
-              <p class="fragment">There are indeed many, many factors that determine the flavor and quality of a cup of coffee</p>
-              <p class="fragment">Luckily, there are also several easy steps we can take to improve our coffee brewing skills!</p>
-              <p class="fragment">These some of the most important and impactful changes we can make to improve our coffee, and luckily most of them are cheap or free</p>
-          </section>
+  <section> <!-- 5.2 -->
+    <h1 class="pink">Step One</h1>
+      <h3 class="fragment blue">Buy freshly roasted, quality coffee, preferably from a local roaster</h3>
+      <p class="fragment">At every step of the journey from plant to cup, quality may only be degraded, never added. This means you must start with fresh, quality coffee roasted to a level of your liking</p>
+  </section>
 
-          <section> <!-- 5.2 -->
-            <h1 class="pink">Step One</h1>
-              <h3 class="fragment blue">Buy freshly roasted, quality coffee, preferably from a local roaster</h3>
-              <p class="fragment">At every step of the journey from plant to cup, quality may only be degraded, never added. This means you must start with fresh, quality coffee roasted to a level of your liking</p>
-          </section>
+  <section> <!-- 5.3 -->
+    <h1 class="pink">Step Two</h1>
+      <h3 class="fragment blue">Use fresh water, not distilled, not too hard</h3>
+      <p class="fragment">Brewed coffee is approximately 98% water, so you want to use good water</p>
+      <p class="fragment">Distilled water will make the coffee taste "flat"</p>
+      <p class="fragment">Spring water is recommended, but generally just pick any water that tastes good to you!</p>
+  </section>
 
-          <section> <!-- 5.3 -->
-            <h1 class="pink">Step Two</h1>
-              <h3 class="fragment blue">Use fresh water, not distilled, not too hard</h3>
-              <p class="fragment">Brewed coffee is approximately 98% water, so you want to use good water</p>
-              <p class="fragment">Distilled water will make the coffee taste "flat"</p>
-              <p class="fragment">Spring water is recommended, but generally just pick any water that tastes good to you!</p>
-          </section>
+  <section> <!-- 5.4 -->
+    <h1 class="pink">Step Three</h1>
+      <h3 class="fragment blue">Use water at the proper temperature</h3>
+      <p class="fragment">The favorable compounds within roasted coffee are soluble in water within a specific temperature range</p>
+      <p class="fragment">The exact range depends on several factors, but generally will be between 195&deg;F and 205&deg;F</p>
+      <p class="fragment">Water that is approximately 30 seconds off a full boil should be about the right temperature</p>
+  </section>
 
-          <section> <!-- 5.4 -->
-            <h1 class="pink">Step Three</h1>
-              <h3 class="fragment blue">Use water at the proper temperature</h3>
-              <p class="fragment">The favorable compounds within roasted coffee are soluble in water within a specific temperature range</p>
-              <p class="fragment">The exact range depends on several factors, but generally will be between 195&deg;F and 205&deg;F</p>
-              <p class="fragment">Water that is approximately 30 seconds off a full boil should be about the right temperature</p>
-          </section>
+  <section> <!-- 5.5 -->
+    <h1 class="pink">Step Four</h1>
+      <h3 class="fragment blue">Weigh your coffee and water</h3>
+      <p class="fragment">Controlling the ratio of coffee to water by weight gives a powerful amount of control over the concentration and extraction of your coffee</p>
+      <p class="fragment">Invest in a gram scale with at least 0.5 gram resolution, and start at a <span class="green">1</span>:<span class="blue">16</span> ratio of <span class="green">coffee</span>:<span class="blue">water</span></p>
+  </section>
 
-          <section> <!-- 5.5 -->
-            <h1 class="pink">Step Four</h1>
-              <h3 class="fragment blue">Weigh your coffee and water</h3>
-              <p class="fragment">Controlling the ratio of coffee to water by weight gives a powerful amount of control over the concentration and extraction of your coffee</p>
-              <p class="fragment">Invest in a gram scale with at least 0.5 gram resolution, and start at a <span class="green">1</span>:<span class="blue">16</span> ratio of <span class="green">coffee</span>:<span class="blue">water</span></p>
-          </section>
+  <section> <!-- 5.6 -->
+    <h1 class="pink">Step Five</h1>
+      <h3 class="fragment blue">Invest in a good burr grinder</h3>
+      <p class="fragment">Blade grinders chop coffee instead of precisely grinding, leading to an uneven particle size distribution</p>
+      <p class="fragment">You don't have to go all&hybull;out on whatever state&hybull;of&hybull;the&hybull;art technology exists - an adjustable burr grinder from a good manufacturer will do - I even recommend getting a refurbished one</p>
+  </section>
 
-          <section> <!-- 5.6 -->
-            <h1 class="pink">Step Five</h1>
-              <h3 class="fragment blue">Invest in a good burr grinder</h3>
-              <p class="fragment">Blade grinders chop coffee instead of precisely grinding, leading to an uneven particle size distribution</p>
-              <p class="fragment">You don't have to go all&hybull;out on whatever state&hybull;of&hybull;the&hybull;art technology exists - an adjustable burr grinder from a good manufacturer will do - I even recommend getting a refurbished one</p>
-          </section>
+  <section> <!-- 5.7 -->
+    <h1 class="pink">Step Six</h1>
+      <h3 class="fragment blue">Keep a coffee journal</h3>
+      <p class="fragment">This will help you improve consistency as well as identify coffees and methods that work for you</p>
+      <p class="fragment">Make note of what coffee you're brewing, how you prepared it, what you taste, and, most importantly, how you felt about your coffee</p>
+      <p class="fragment">A bit of process can greatly improve results</p>
+  </section>
+</section>
 
-          <section> <!-- 5.7 -->
-            <h1 class="pink">Step Six</h1>
-              <h3 class="fragment blue">Keep a coffee journal</h3>
-              <p class="fragment">This will help you improve consistency as well as identify coffees and methods that work for you</p>
-              <p class="fragment">Make note of what coffee you're brewing, how you prepared it, what you taste, and, most importantly, how you felt about your coffee</p>
-              <p class="fragment">A bit of process can greatly improve results</p>
-          </section>
-        </section>
+<section>
+  <section> <!-- 6.1 -->
+    <h1>Resources</h1>
+  </section>
 
-        <section>
-          <section> <!-- 6.1 -->
-            <h1>Resources</h1>
-          </section>
+  <section> <!-- 6.2 -->
+    <h1 class="green">Specialty Coffee Association</h1>
+    <p>The <a href="https://sca.coffee/" target="_blank" rel="noopener noreferrer">SCA</a> is a great resource for coffee quality - they literally set the standard(s)!</p>
+    <p class="fragment">One especially useful resource is their <a href="https://sca.coffee/certified-home-brewer" target="_blank" rel="noopener noreferrer">Certified Home Brewer</a> list</p>
+  </section>
 
-          <section> <!-- 6.2 -->
-            <h1 class="green">Specialty Coffee Association</h1>
-            <p>The <a href="https://sca.coffee/" target="_blank" rel="noopener noreferrer">SCA</a> is a great resource for coffee quality - they literally set the standard(s)!</p>
-            <p class="fragment">One especially useful resource is their <a href="https://sca.coffee/certified-home-brewer" target="_blank" rel="noopener noreferrer">Certified Home Brewer</a> list</p>
-          </section>
+  <section data-background-image="/SCA_TasterWheel.svg" data-background-opacity="0.5"> <!-- 6.3 -->
+    <h1 class='black'>SCA Flavor Wheel</h1>
+      <p class='black'>The <a href="https://sca.coffee/research/coffee-tasters-flavor-wheel" target="_blank" rel="noopener noreferrer">SCA Flavor Wheel</a> can help guide you in tasting coffee and developing your palate</p>
+      <button class="backgroundToggle">I can't read this</button>
+  </section>
 
-          <section data-background-image="/SCA_TasterWheel.svg" data-background-opacity="0.5"> <!-- 6.3 -->
-            <h1 class='black'>SCA Flavor Wheel</h1>
-              <p class='black'>The <a href="https://sca.coffee/research/coffee-tasters-flavor-wheel" target="_blank" rel="noopener noreferrer">SCA Flavor Wheel</a> can help guide you in tasting coffee and developing your palate</p>
-              <button class="backgroundToggle">I can't read this</button>
-          </section>
-
-          <section> <!-- 6.4 -->
-            <h1 class="green">YouTube</h1>
-              <p>There are so many things you can learn on YouTube...</p>
-              <p>Here are some useful places to start:</p>
-              <ul>
-                <li><a href="https://www.youtube.com/watch?v=fl8hPfs3o8c" target="_blank" rel="noopener noreferrer">Hario v60 - Stumptown Coffee Roasters</a></li>
-                <li><a href="https://www.youtube.com/watch?v=2Sela-8BF9Q" target="_blank" rel="noopener noreferrer">Chemex - HowCast</a></li>
-                <li><a href="https://www.youtube.com/watch?v=mupueSMHBJQ&list=PLZ5Na-9NWGIroUrnxF47ZH7KLF26OCjl9&index=4&t=0s" target="_blank" rel="noopener noreferrer">Kalita Wave - Nick Cho</a></li>
-                <li><a href="https://www.youtube.com/watch?v=pPM8mcqHxes&list=PLZ5Na-9NWGIroUrnxF47ZH7KLF26OCjl9&index=2" target="_blank" rel="noopener noreferrer">Iced Coffee - Peter Guiliano</a></li>
-                <li><a href="https://www.youtube.com/watch?v=Jjfxr24iuuw">Espresso - ChefSteps</a></li>
-              </ul>
-          </section>
-        </section>
-      </div>
-    </div>
-
-    <%= javascript_include_tag "reveal", :cache => true %>
-    <%= javascript_include_tag "presentations/coffee", :cache => true, :async => true %>
-    <script>window.addEventListener('load', Reveal.initialize)</script>
-    <style>
-    section .black {
-      color: black;
-    }
-
-    section .blue {
-      color: <%= @blue %>;
-    }
-
-    section .green {
-      color: <%= @green %>;
-    }
-
-    section .pink {
-      color: <%= @pink %>;
-    }
-
-    button.backgroundToggle {
-      background-color: #E7E7E7;
-      color: black;
-      border: 4px solid #333;
-      border-radius: 8px;
-      padding: 15px 32px;
-      font-size: 16px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      transition-duration: 0.4s;
-    }
-
-    button.backgroundToggle:hover {
-      background-color: #333;
-      color: #E7E7E7;
-    }
-    </style>
-  </body>
-</html>
+  <section> <!-- 6.4 -->
+    <h1 class="green">YouTube</h1>
+      <p>There are so many things you can learn on YouTube...</p>
+      <p>Here are some useful places to start:</p>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=fl8hPfs3o8c" target="_blank" rel="noopener noreferrer">Hario v60 - Stumptown Coffee Roasters</a></li>
+        <li><a href="https://www.youtube.com/watch?v=2Sela-8BF9Q" target="_blank" rel="noopener noreferrer">Chemex - HowCast</a></li>
+        <li><a href="https://www.youtube.com/watch?v=mupueSMHBJQ&list=PLZ5Na-9NWGIroUrnxF47ZH7KLF26OCjl9&index=4&t=0s" target="_blank" rel="noopener noreferrer">Kalita Wave - Nick Cho</a></li>
+        <li><a href="https://www.youtube.com/watch?v=pPM8mcqHxes&list=PLZ5Na-9NWGIroUrnxF47ZH7KLF26OCjl9&index=2" target="_blank" rel="noopener noreferrer">Iced Coffee - Peter Guiliano</a></li>
+        <li><a href="https://www.youtube.com/watch?v=Jjfxr24iuuw">Espresso - ChefSteps</a></li>
+      </ul>
+  </section>
+</section>

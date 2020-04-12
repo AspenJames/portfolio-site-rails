@@ -1,5 +1,18 @@
 class PresentationsController < ApplicationController
   def coffee
+    set_theme_or_render_not_found
+    @title = "DTL: Coffee"
+    render :coffee, :layout => "presentation"
+  end
+
+  def vr
+    set_theme_or_render_not_found
+    @title = "Virtual Reality"
+    render :vr, :layout => "presentation"
+  end
+
+  private
+  def set_theme_or_render_not_found
     @dark_themes = %w(black blood league moon)
     @light_themes = %w(beige hull-blue serif simple sky solarized white)
     @themes = @dark_themes + @light_themes
@@ -19,7 +32,5 @@ class PresentationsController < ApplicationController
       @green = "#00E673"
       @pink  = "#E60073"
     end
-
-    render :coffee, :layout => false
   end
 end

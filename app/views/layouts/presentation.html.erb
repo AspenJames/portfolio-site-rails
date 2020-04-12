@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title><%= @title || "Presentation" %></title>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content='"Up Your Home Coffee Game" presentation for Drink, Talk, Learn @Skilljar 17 April, 2020'>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= favicon_link_tag %>
+
+    <%= stylesheet_link_tag "reset.css" %>
+    <%= stylesheet_link_tag "reveal.css" %>
+    <%= stylesheet_link_tag "theme/#{@theme}.css"%>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <%= yield %>
+      </div>
+    </div>
+    <%= javascript_include_tag "reveal", :cache => true %>
+    <%= javascript_include_tag "presentations/toggleBackground", :cache => true, :async => true %>
+    <script>window.addEventListener('load', Reveal.initialize)</script>
+    <%= render partial: "style", locals: {b: @blue, g: @green, p: @pink} %>
+  </body>
+</html>
+
