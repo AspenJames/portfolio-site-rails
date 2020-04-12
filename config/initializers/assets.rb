@@ -24,4 +24,4 @@ Rails.application.config.assets.precompile += %w(projects/detail.js codemirror/m
 # MISC
 Rails.application.config.assets.precompile += %w(favicon.ico)
 # LIBS
-Rails.application.config.assets.precompile += %w(css/reset.css css/reveal.css css/theme/black.css lib/css/zenburn.css js/reveal.js source-sans-pro/source-sans-pro.css)
+Rails.application.config.assets.precompile += %w(css/reset.css css/reveal.css lib/css/zenburn.css js/reveal.js source-sans-pro/source-sans-pro.css css/theme/beige.css css/theme/black.css css/theme/blood.css css/theme/league.css css/theme/moon.css css/theme/night.css css/theme/serif.css css/theme/simple.css css/theme/sky.css css/theme/solarized.css css/theme/white.css)
