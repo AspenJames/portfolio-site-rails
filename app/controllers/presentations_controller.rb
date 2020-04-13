@@ -7,7 +7,7 @@ class PresentationsController < ApplicationController
     @theme = params['theme'] || 'black'
 
     if !@themes.include? @theme
-      return render :theme_not_found, :layout => false
+      render :theme_not_found, :layout => false and return
     end
 
     if @dark_themes.include? @theme
